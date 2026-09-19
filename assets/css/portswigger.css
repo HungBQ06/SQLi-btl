@@ -1,0 +1,232 @@
+/* PortSwigger Academy Theme Replicated */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Ubuntu', -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* PortSwigger Top Bar */
+.ps-academy-bar {
+    background-color: #20242a;
+    color: #ffffff;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #ff6600;
+}
+
+.ps-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ps-badge {
+    background-color: #ff6600;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.ps-title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+.ps-lab-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+.ps-lab-label {
+    background-color: #334155;
+    color: #cbd5e1;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.ps-lab-name {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.ps-status-pill {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.ps-unsolved {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+.ps-solved {
+    background-color: #22c55e;
+    color: #ffffff;
+}
+
+.ps-congrats-banner {
+    background-color: #166534;
+    color: #ffffff;
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #22c55e;
+}
+
+/* PortSwigger Store Header */
+.store-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.store-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.store-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.store-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.store-nav a {
+    color: #64748b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.store-nav a:hover {
+    color: #ff6600;
+}
+
+/* Categories Bar */
+.category-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.category-bar span {
+    font-weight: bold;
+    color: #475569;
+}
+
+.cat-btn {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.cat-btn:hover, .cat-btn.active {
+    background-color: #ff6600;
+    color: #ffffff;
+    border-color: #ff6600;
+}
+
+/* Product Cards */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.product-img {
+    height: 120px;
+    background: #f1f5f9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 8px;
+    word-break: break-all;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 16px;
+}
+
+.btn-view {
+    background-color: #ff6600;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-view:hover {
+    background-color: #e05a00;
+}
+
+/* Footer SQL Debug Panel (Discrete collapsible) */
+.debug-footer {
+    margin-top: 60px;
+    background: #1e293b;
+    color: #f8fafc;
+    border-radius: 6px;
+    padding: 16px 20px;
+    font-family: monospace;
+    font-size: 13px;
+}
